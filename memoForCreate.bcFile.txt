@@ -1,0 +1,31 @@
+rustc src/main.rs -C lto --emit llvm-bc 
+  --extern num_traits=lib/libnum_traits-6d46d27035541333.rlib
+  --extern num_integer=lib/libnum_integer-4596db29bab872f9.rlib
+  --extern num=lib/libnum-8b9190641bce9431.rlib
+  --extern sdl2=lib/libsdl2-93cd8f30bc84dc2b.rlib
+
+--extern 
+
+--extern num=lib/libnum-8b9190641bce9431.rlib
+--extern num_complex=lib/libnum_complex-22c8ffb71f8ba9c2.rlib
+--extern num_iter=lib/libnum_iter-2b98ddc68a3a7564.rlib
+--extern num_traits=lib/libnum_traits-6d46d27035541333.rlib
+--extern num_bigint=lib/libnum_bigint-9c2f9a7c80fdd664.rlib
+--extern num_integer=lib/libnum_integer-4596db29bab872f9.rlib
+--extern num_rational=lib/libnum_rational-de4afc3f73ded885.rlib
+--extern sdl2=lib/libsdl2-93cd8f30bc84dc2b.rlib
+
+
+rustc src/main.rs -C lto --emit llvm-bc --target wasm32-unknown-emscripten
+
+
+
+
+cargo rustc -C lto --emit llvm-bc --target wasm32-unknown-emscripten
+
+
+
+
+
+rustc src/main.rs -C lto --emit llvm-bc
+--extern num_traits=lib/libnum_traits-6d46d27035541333.rlib --extern num_integer=lib/libnum_integer-4596db29bab872f9.rlib --extern num=lib/libnum-8b9190641bce9431.rlib --extern sdl2=lib/libsdl2-93cd8f30bc84dc2b.rlib
